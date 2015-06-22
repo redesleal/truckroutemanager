@@ -4,13 +4,9 @@ function registar()
 	
 	 var formLogin = document.getElementById("formLogin");
 	   var xx = '{ "JASON" : true, "user" : "'+formLogin.elements.user.value+'",  "email" : "'+formLogin.elements.email.value+'",  "name":"'+formLogin.elements.name.value+'" , "pass1" : "'+formLogin.elements.pass1.value+'", "pass2" : "'+formLogin.elements.pass2.value+'" }';
-	    alert(xx);
-	 	var jsondata = JSON.parse(xx);
-	 	alert(jsondata.user+""+jsondata.pass1);
-
-    var response = callJSONserver(jsondata,"/registuser/registuser");
- //   var response = callJSONserver("user:"+user.value+",pass1:"+pass.value, true,"loginuser/login");
-    
+	   var jsondata = JSON.parse(xx);
+	 var response = callJSONserver(jsondata,"/registuser/registuser");
+ 
   
    }
 
@@ -18,12 +14,11 @@ function registar()
 function afterRegister( jsonStr)
 {
 	var body = document.getElementById("container");  
-	//document.getElementById("form").remove();
 	while (body.firstChild) {
 		body.removeChild(body.firstChild);
 	}
 	//document.getElementById("table1").remove();
-    body.innerHTML =""+jsonStr.Aproche;
+    body.innerHTML +=""+jsonStr.Aproche;
 }
 
 function registarForm()

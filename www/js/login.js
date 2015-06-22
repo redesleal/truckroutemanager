@@ -68,7 +68,7 @@ function  callJSONserver(jsonObj,url)
 		      }
 		   }
 
-		   xhr.open('POST', "http://truckroutemanager.appspot.com/"+url, true);
+		   xhr.open('POST', url, true);
 
 		   // tell the server that JSON is being sent
 		   xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded', 'charset=UTF-8');
@@ -93,8 +93,10 @@ function  callJSONserver(jsonObj,url)
 		            	   afterCliente( jsonStr);
 		            // Now do something with the JSON object
 		          //  myMethod( jsonObj );
-		            if(jsonStr.Type=="erro")
+		            else if(jsonStr.Type=="erro")
 		            	alert("erro na ação")
+		            	else
+		            		document.getElementById("container").innerHTML +=""+jsonStr.Type;
 		         } else {
 		            console.log( xhr.statusText) ;
 
