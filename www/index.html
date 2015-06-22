@@ -1,48 +1,124 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>HTML5 Contact Form - Wood Cabin by Lewis Healey</title>
-	<link rel="stylesheet" href="css/styleAutoComplete.css">
-	<link rel="stylesheet" href="css/styleLoginRegistation.css">
-    
+	<title>Blocky UI Kit a Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+	<!--fonts-->
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+	<!--//fonts-->
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- for-mobile-apps -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Blocky UI Kit Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+		Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- //for-mobile-apps -->
+	<!-- js -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- js -->
+
+	<!----graph -------->
+	<script src="js/highcharts.js"></script>
+	
+	<!----//graph -------->
 </head>
 <body>
-<input type="hidden" id="sesson"></input>
-
-<div id="container" class="container">
-	<section id="content">
-		<form id="formLogin" action="Javascript:login()">
-			<h1>Login Form</h1>
-			<div>
-				<input type="text" placeholder="Username" required="" id="user" />
+<!-- content -->
+<div class="content">
+	<div class="container">
+		<div class="header">
+			<div class="logo">
+				<a href="#"><img src="images/logo.png" alt=""/></a>
 			</div>
-			<div>
-				<input type="password" placeholder="Password" required="" id="pass1" />
+			<div class="navigation">
+				<span class="menu"><img src="images/menu.png" alt=""/></span>
+								<ul class="nav1">
+									<li><a class="active" href="index.html">HOME</a></li>
+									<li><a href="#">SERVICES</a></li>	
+									<li><a href="#">PORTFOLIO</a></li>
+									<li><a href="#">CONTACT</a></li>
+								</ul>
+								<!-- script for menu -->
+									<script> 
+										$( "span.menu" ).click(function() {
+										$( "ul.nav1" ).slideToggle( 300, function() {
+										 // Animation complete.
+										});
+										});
+									</script>
+								<!-- //script for menu -->
+
 			</div>
-			<div>
-				<input type="submit" value="Log in" />
-				<a href="Javascript:registar()">Lost your password?</a>
-				<a href="Javascript:registarForm()">Register</a>
+			
+			<div class="clearfix"></div>
+		</div>
+		<div class="content-top">
+			<div class="wrap">
+				<div class="col-md-5 content-left">
+					
+								</div>
+							
+				<div class="clearfix"></div>
 			</div>
-		</form><!-- form -->
-		<div class="button">
-			<a href="#">Download source file</a>
-		</div><!-- button -->
-	</section><!-- content -->
-</div><!-- container -->
-
-
-<script type="text/javascript">
-   
-   
-   
-</script>
-
+		</div>
+		<div class="content-bottom">
+			<div class="col-md-5 con-btm-left">
+				
+				
+			
+			</div>
+			<div class="col-md-7 con-btm-right">
+				<div class="con-btm-grids">
+					<div class="con-btm-l">
+						<div id="login" class="login-tab">
+							<div class="user-login">
+								<h2>Login</h2>
+								<div class="strip"></div>
+								<form id="formLogin" action="Javascript:login()">
+									<input id="user" type="text" value="name@email.com" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'name@email.com';}" required="">
+									<input id="pass1" type="password" value="PASSWORD" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'PASSWORD';}" required="">
+										<div class="user-grids">
+											<div class="user-left">
+												<label><a href="Javascript:registarForm()">Register</a></label>
+											</div>
+											<div class="user-right">
+												<input type="submit" value="LOGIN">
+												<a href="Javascript:registar()">Lost your password?</a>
+															</div>
+											<div class="clearfix"></div>
+										</div>
+								</form>
+							</div>
+						</div>
+						
+						
+					</div>
+					
+					<div class="clearfix"></div>
+				</div>
+				
+				
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="footer">
+			<p>Copyright &copy; 2015 Blocky UI Kit. Template by <a href="http://w3layouts.com/"> W3layouts</a></p>
+		</div>
+	</div>
+</div>
+	
+<!-- //content -->
+</body>
+</html>
  <script src="js/cliente.js"></script>
 <script src="js/registar.js"></script>
  <script src="js/login.js"></script>
    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
    <script src="js/maps.js"></script>
-</body>
-</html>
