@@ -5,7 +5,7 @@ function clientes()
 	
 	
 
-	callServerCliente("","/clientes/picture");
+	callServerCliente("","httptruckroutemanager.appspot.com/clientes/picture");
  //   var response = callJSONserver("user:"+user.value+",pass1:"+pass.value, true,"loginuser/login");
     
   

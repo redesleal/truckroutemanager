@@ -9,7 +9,7 @@ function login()
 	 	var jsondata = JSON.parse(xx);
 	 	
 
-	 	 var response =   callJSONserver(jsondata,"/loginuser/login");
+	 	 var response =   callJSONserver(jsondata,"httptruckroutemanager.appspot.com/loginuser/login");
  //   var response = callJSONserver("user:"+user.value+",pass1:"+pass.value, true,"loginuser/login");
     
   
