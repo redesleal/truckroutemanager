@@ -5,7 +5,7 @@ function clientes()
 	
 	
 
-	callServerCliente("","httptruckroutemanager.appspot.com/clientes/picture");
+	callServerCliente("","/clientes/picture");
  //   var response = callJSONserver("user:"+user.value+",pass1:"+pass.value, true,"loginuser/login");
     
   
@@ -34,7 +34,7 @@ function  callServerCliente(jsonObj,url)
 		      }
 		   }
 
-		   xhr.open('POST', url, true);
+		   xhr.open('POST', "http://truckroutemanager.appspot.com"+url, true);
 
 		   // tell the server that JSON is being sent
 		   xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded', 'charset=UTF-8');

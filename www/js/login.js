@@ -9,7 +9,7 @@ function login()
 	 	var jsondata = JSON.parse(xx);
 	 	
 
-	 	 var response =   callJSONserver(jsondata,"httptruckroutemanager.appspot.com/loginuser/login");
+	 	 var response =   callJSONserver(jsondata,"/loginuser/login");
  //   var response = callJSONserver("user:"+user.value+",pass1:"+pass.value, true,"loginuser/login");
     
   
@@ -68,7 +68,7 @@ function  callJSONserver(jsonObj,url)
 		      }
 		   }
 
-		   xhr.open('POST', url, true);
+		   xhr.open('POST', "http://truckroutemanager.appspot.com"+url, true);
 
 		   // tell the server that JSON is being sent
 		   xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded', 'charset=UTF-8');

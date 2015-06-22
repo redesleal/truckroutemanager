@@ -5,7 +5,7 @@ function registar()
 	 var formLogin = document.getElementById("formLogin");
 	   var xx = '{ "JASON" : true, "user" : "'+formLogin.elements.user.value+'",  "email" : "'+formLogin.elements.email.value+'",  "name":"'+formLogin.elements.name.value+'" , "pass1" : "'+formLogin.elements.pass1.value+'", "pass2" : "'+formLogin.elements.pass2.value+'" }';
 	   var jsondata = JSON.parse(xx);
-	 var response = callJSONserver(jsondata,"httptruckroutemanager.appspot.com/registuser/registuser");
+	 var response = callJSONserver(jsondata,"/registuser/registuser");
  
   
    }
