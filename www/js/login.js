@@ -12,7 +12,7 @@ function login()
 	var xx = '{ "JASON" : true, "user" : "'+formLogin.elements.user.value+'", "pass1" : "'+formLogin.elements.pass1.value+'" }';
 	var jsondata = JSON.parse(xx);
 	alert("xd");
-	callJSONserverIndex(jsondata,"/loginuser/login");
+	callJSONserverIndex(jsondata,"http://truckroutemanager.appspot.com/loginuser/login");
 	}
 
 
@@ -65,7 +65,7 @@ function  callJSONserverIndex(jsonObj,url)
 		      }
 		   }
 
-		   xhr.open('POST',"http://truckroutemanager.appspot.com"+url, true);
+		   xhr.open('POST',url, true);
 		   xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded', 'charset=UTF-8');
 		   xhr.onreadystatechange = function() {
 		      if (xhr.readyState == 4) 
