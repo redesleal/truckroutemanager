@@ -58,8 +58,8 @@ function layoutClientes(json)
 	{
 	var xx = '{ "JASON" : true, "user" : "'+user+'", "pass1" : "'+log+'" }';
 	var jsondata = JSON.parse(xx);
-	
-	document.getElementById("menu1").href="Javascript:callJSONserverIndex('"+jsondata+"','http://truckroutemanager.appspot.com/loginuser/login');";
+	alert(jsondata);
+	document.getElementById("menu1").href="Javascript:callJSONserverIndex('"+jsondata+"','http://truckroutemanager.appspot.com/loginuser/login')";
     document.getElementById("menu1").innerHTML ="Home";  
 	document.getElementById("menu2").href="Javascript:CreateClienteForm('"+json.URL+"')";
     document.getElementById("menu2").innerHTML ="CreateCliente";  

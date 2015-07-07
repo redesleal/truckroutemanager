@@ -11,7 +11,7 @@ function login()
 	log=formLogin.elements.pass1.value;
 	var xx = '{ "JASON" : true, "user" : "'+formLogin.elements.user.value+'", "pass1" : "'+formLogin.elements.pass1.value+'" }';
 	var jsondata = JSON.parse(xx);
-	alert("xd");
+	
 	callJSONserverIndex(jsondata,"http://truckroutemanager.appspot.com/loginuser/login");
 	}
 
@@ -87,7 +87,7 @@ function  callJSONserverIndex(jsonObj,url)
 		        else 
 		        {
 		            console.log( xhr.statusText) ;
-		            alert( "Error getting " + jsonStr[0].Type + 
+		            alert( "Error getting " + jsonStr.Type + 
 		               ": " + xhr.statusText + ", code: "+ xhr.status );
 		         }
 		      }
