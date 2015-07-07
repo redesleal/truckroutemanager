@@ -21,6 +21,7 @@ function afterLogin(response)
 	if(response && !response.error)    
 		{
 		var body = document.getElementById("conteudo");  
+		alert(response.imageURL);
 		body.innerHTML = "WELCOME!  Nome = "+ response.Name + "  <img src='"+response.imageURL+"' style='width:100px; height:100px;'>";
 		document.getElementById("menu1").href="Javascript:uploadImagemUser('"+response.Action+"','"+response.SessionID+"')";
         document.getElementById("menu1").innerHTML ="EditUser";  
